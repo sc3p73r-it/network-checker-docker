@@ -12,44 +12,51 @@ On-demand troubleshooting in Kubernetes clusters (Pods, Jobs, Ephemeral containe
 
 # 🚀 Features
 
-Minimal image size (Alpine Linux)
+✅  Minimal image size (Alpine Linux)
 
-Includes commonly used network diagnostic tools:
+✅ Includes commonly used network diagnostic tools:
 
-ping (ICMP connectivity)
+✅ ping (ICMP connectivity)
 
-curl (HTTP/HTTPS testing)
+✅ curl (HTTP/HTTPS testing)
 
-dig / nslookup (DNS checks via bind-tools)
+✅ dig / nslookup (DNS checks via bind-tools)
 
-traceroute (network path inspection)
+✅ traceroute (network path inspection)
 
-netstat, ifconfig (basic network inspection)
+✅ netstat, ifconfig (basic network inspection)
 
 Interactive shell support
 
 Works in Docker, Docker Compose, and Kubernetes
 
 # 🧰 Included Tools
-Tool	Purpose
-ping	Test basic network connectivity
-curl	Test HTTP/HTTPS endpoints
-dig	DNS resolution testing
-nslookup	Simple DNS lookup
-traceroute	Trace network hops
-ifconfig	Interface inspection
-netstat	Port and connection inspection
-bash / sh	Interactive debugging
+- Tool	Purpose
+- ping	Test basic network connectivity
+- curl	Test HTTP/HTTPS endpoints
+- dig	DNS resolution testing
+- nslookup	Simple DNS lookup
+- traceroute	Trace network hops
+- ifconfig	Interface inspection
+- netstat	Port and connection inspection
+- bash / sh	Interactive debugging
 
-▶️ Usage (Docker)
-Run Interactive Shell
+# 🔐 Security
+- Runs as a non-root user (appuser)
+- No unnecessary packages installed
+- Designed for debugging only, not production workloads
+
+# ▶️ Usage (Docker)
+### Run Interactive Shell
 ```
 docker run -it --rm sc3p73r/network-checker:latest
 ```
 
-Run with Bash
+### Run with Bash
 ```
 docker run -it --rm sc3p73r/network-checker:latest bash
 ```
+
+
 
 
