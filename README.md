@@ -1,4 +1,4 @@
-# 📡 Network Checker (Alpine-based)
+## 📡 Network Checker (Alpine-based)
 
 A lightweight Network Checker container built on Alpine Linux, designed for quick and reliable network connectivity diagnostics in Docker and Kubernetes environments.
 
@@ -10,7 +10,7 @@ Validating DNS, routing, and ICMP connectivity
 
 On-demand troubleshooting in Kubernetes clusters (Pods, Jobs, Ephemeral containers)
 
-# 🚀 Features
+## 🚀 Features
 
 ✅  Minimal image size (Alpine Linux)
 
@@ -30,7 +30,7 @@ Interactive shell support
 
 Works in Docker, Docker Compose, and Kubernetes
 
-# 🧰 Included Tools
+## 🧰 Included Tools
 - Tool	Purpose
 - ping	Test basic network connectivity
 - curl	Test HTTP/HTTPS endpoints
@@ -41,12 +41,12 @@ Works in Docker, Docker Compose, and Kubernetes
 - netstat	Port and connection inspection
 - bash / sh	Interactive debugging
 
-# 🔐 Security
+## 🔐 Security
 - Runs as a non-root user (appuser)
 - No unnecessary packages installed
 - Designed for debugging only, not production workloads
 
-# ▶️ Usage (Docker)
+## ▶️ Usage (Docker)
 ### Run Interactive Shell
 ```
 docker run -it --rm sc3p73r/network-checker:latest
