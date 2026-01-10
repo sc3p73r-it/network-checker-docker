@@ -26,10 +26,6 @@ On-demand troubleshooting in Kubernetes clusters (Pods, Jobs, Ephemeral containe
 
 ✅ netstat, ifconfig (basic network inspection)
 
-Interactive shell support
-
-Works in Docker, Docker Compose, and Kubernetes
-
 ## 🧰 Included Tools
 Tool    Purpose
 - ping	Test basic network connectivity
