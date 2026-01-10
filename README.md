@@ -31,7 +31,7 @@ Interactive shell support
 Works in Docker, Docker Compose, and Kubernetes
 
 ## 🧰 Included Tools
-- Tool	Purpose
+Tool    Purpose
 - ping	Test basic network connectivity
 - curl	Test HTTP/HTTPS endpoints
 - dig	DNS resolution testing
@@ -57,6 +57,24 @@ docker run -it --rm sc3p73r/network-checker:latest
 docker run -it --rm sc3p73r/network-checker:latest bash
 ```
 
-
-
-
+## 🔍 Common Command Examples
+### Ping a Host
+```
+ping example.com
+```
+### Test HTTP Connectivity
+```
+curl -I https://example.com
+```
+### DNS Lookup
+```
+dig example.com
+```
+### Trace Network Path
+```
+traceroute example.com
+```
+### Check Network Interface
+```
+ifconfig
+```
