@@ -6,7 +6,7 @@ LABEL maintainer="Sc3p73R"
 LABEL website="https://waiyan.dev"
 
 # Install the network diagnostic tools	
-RUN apk add --no-cache bash iputils traceroute net-tools bind-tools curl
+RUN apk add --no-cache bash iputils traceroute net-tools bind-tools curl 
 
 # Create Non-Root User
 RUN adduser -D appuser
