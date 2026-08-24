@@ -54,7 +54,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@v0.36.0
         with:
-          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          image-ref: 'ghcr.io/sc3p73r-it/network-checker:latest'
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
